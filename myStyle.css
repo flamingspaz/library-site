@@ -1,5 +1,32 @@
+@media screen and (max-width: 1000px) {
+
+	div[class="mobiledevicesupport"] #container {
+		width: 80% !important;
+		vertical-align: middle !important;
+	}
+
+		div[class="mobiledevicesupport"] #container img {
+		display: inline !important;
+		width: 100% !important;
+		vertical-align: middle !important;
+	}
+
+		div[class="mobiledevicesupport"] #locationcontainer {
+		margin: 0 auto;
+	}
+
+			div[class="mobiledevicesupport"] #location {
+		width: 100%;
+	}
+
+		div[class="mobiledevicesupport"] #mapcontainer iframe {
+		margin: 0 auto;
+	}
+}
+
 body {
 	font-family: 'Noto Sans';
+	background: #BEBEBE;
 }
 
 #title {
@@ -10,6 +37,9 @@ body {
 #container {
 	width: 887px;
 	margin: 0 auto;
+	background: #FFFFFF;
+	padding: 10px;
+	box-shadow: 12px 0 15px -4px #888888, -12px 0 8px -4px #888888;
 }
 
 #location {
