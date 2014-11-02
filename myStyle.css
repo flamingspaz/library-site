@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'NotoSans-Regular'; /*a name to be used later*/
+	src: url('fonts/NotoSans-Regular.ttf'); /*URL to font*/
+}
+
 @media screen and (max-width: 1000px) {
 
 	div[class="mobiledevicesupport"] #container {
@@ -36,9 +41,19 @@
 
 }
 
+a {
+	text-decoration: none;
+}
+
 body {
-	font-family: 'Noto Sans';
+	font-family: 'NotoSans-Regular';
 	background: #BEBEBE;
+}
+
+.navbuttons {
+	float: right;
+	margin-right: 10px;
+	color:#1f9ee5;
 }
 
 #title {
@@ -78,4 +93,24 @@ body {
 	  float: left;
 	  vertical-align: middle
 	  overflow: hidden
+}
+
+#banner {
+  animation-duration: 2s;
+  animation-name: fadein;
+}
+
+#mapcontainer {
+	  animation-duration: 4s;
+  animation-name: fadein;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
